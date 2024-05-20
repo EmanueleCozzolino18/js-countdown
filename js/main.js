@@ -12,9 +12,13 @@ function contoRovescio() {
     if (timerSecond > 0) {
 
         console.log(timerSecond);
+
+        //MANIPOLIAMO IL DOM
+        document.getElementById('countdown').innerText = timerSecond;
+
         timerSecond--;
         //QUANDO SARA' ARRIVATO A 0 CI STAMPERA BUON ANNO IN CONSOLE
-    } else console.log("Buon Anno!");
+    } else document.getElementById('countdown').innerText = "Buon Anno!";
 
 }
 
